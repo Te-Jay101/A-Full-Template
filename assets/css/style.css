@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* logo styling */
+
+#logo {
+    color: #008000;
+    text-align: left;
+    text-transform: capitalize;
+    margin-left: 30px;
+    font-size: 210%;
+    line-height: 20px;
+}
+
+/* menu styling */
+
+#menu {
+    float: right;
+    line-height: 10px;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
