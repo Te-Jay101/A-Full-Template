@@ -1,33 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
     border: none;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
 
-/* logo styling */
+/* headings and logo */
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
 
 #logo {
-    color: #008000;
-    text-align: left;
-    text-transform: capitalize;
+    float: left;
+    font-size: 120%;
     margin-left: 30px;
-    font-size: 210%;
-    line-height: 20px;
+    color: green;
 }
 
-/* menu styling */
+/* navigation links */
 
 #menu {
-    float: right;
-    line-height: 10px;
-    letter-spacing: 4px;
+    font-size: 90%;
+    letter-spacing: 10px;
+}
+
+#menu, #logo {
+    line-height: 75px;
 }
 
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 3px solid #008000;
+}
+
+.active {
+    border-bottom: 1px solid #008000;
+}
+
+/* main page section */
+
+#hero-outer {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #008000;
+    text-align: center;
+}
+
+.hero-image {
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    clear: none;
+}
+
+.left-about {
+    text-align: left;
+    padding: 2px 40px 10%;
+
+}
+
+h4 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/* footer styling */
+
+.footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 100pxx 15%;
+    background: #efefef;
+    display: flex;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 1;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.footer-icons i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 2%;
+    color: #1f1e1e;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Photo gallery styling */
+
+.photos {
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+}
+
+.photos > img {
+    width: 100%;
 }
