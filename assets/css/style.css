@@ -20,14 +20,13 @@ h1, h2 {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: #008000;
 }
 
 #logo {
     float: left;
     font-size: 120%;
     margin-left: 30px;
-    color: green;
 }
 
 /* navigation links */
@@ -35,6 +34,7 @@ h1, h2 {
 #menu {
     font-size: 90%;
     letter-spacing: 10px;
+    color: #008000;
 }
 
 #menu, #logo {
@@ -63,43 +63,37 @@ h1, h2 {
 /* main page section */
 
 #hero-outer {
-    height: 500px;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+    max-width: 100%;
 
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
+#cover-text, #cover-text h2, #cover-text h3 {
     color: #008000;
     text-align: center;
 }
 
-.hero-image {
-    text-align: center;
-    height: 600px;
-    width: 100%;
-    clear: none;
-}
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
 
-.left-about {
-    text-align: left;
-    padding: 2px 40px 10%;
-
-}
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    color: #008000;
+  }
 
 h4 {
     text-decoration: underline;
     text-align: center;
 }
 
-.left-menu {
-    text-align: left;
-}
-
-.left-menu, p, h3 {
-    color: #008000;
-}
+/* so far so good on matching css and html */
 
 /* Menu styling */
 
@@ -119,6 +113,7 @@ h4 {
     border-right: 3px solid #008000;
     border-left: 3px solid #008000;
     text-align: center;
+    overflow: auto;
 }
 
 .box-2 {
@@ -127,6 +122,7 @@ h4 {
     background-color: #efefef;
     border-right: 3px solid #008000;
     text-align: center;
+    overflow: auto;
 }
 
 .box-3 {
@@ -135,47 +131,19 @@ h4 {
     background-color: #efefef;
     border-right: 3px solid #008000;
     text-align: center;
+    overflow: auto;
 }
 
-/* sign up styling */
-
-.container-2 {
-    margin-top: 20%;
-    width: 50px;
-    padding: 100pxx 15%;
-    display: inline-flex;
-    color: #008000;
-    text-align: center;
-}
-
-.form-style {
-    background-color: #efefef;
-    border: 1px solid black;
-    color: #008000;
-    text-align: center;
-}
-
-form, h2 {
-    color: #008000;
-}
-
-.form-submit-button {
-	background: #008100;
-	color: #fff;
-	border: 1px solid #eee;
-	border-radius: 30px;
-	box-shadow: 10px 10px 10px #eee;
-	text-shadow: none;
-}
 
 /* footer styling */
 
 .footer {
     margin-top: 140px;
     width: 100%;
-    padding: 100pxx 15%;
+    padding: inherit;
     background: #efefef;
     display: flex;
+    color: #008000;
 }
 
 .footer div {
@@ -190,6 +158,7 @@ form, h2 {
     font-weight: 300;
     margin-bottom: 50px;
     letter-spacing: 2px;
+    color: #008000;
 }
 
 .footer-icons i {
@@ -212,7 +181,140 @@ ul {
     column-gap: 0;
 }
 
+
 .photos > img {
     width: 100%;
 }
 
+
+/* sign-up-styling */
+
+.form-section {
+    clear: left;
+    background: url("https://www.foodandwine.com/thmb/CzIQNpO_hzszQk-t1US0u7m3o6Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/200907-r-bucatini-f5f9a98a19fe4e228d4c69aa902657f4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    color: #fff;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form > h2, h3 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #008000;
+}
+
+.submit-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 20px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #008000;
+    color: #fafafa;
+    display: ruby-base;
+}
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #hero-outer {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+
+    #cover-text {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+
+    #times div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px; 
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text{
+        left:0;
+    }
+
+    #hero-outer{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text p, {
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+
+    #photo{
+        column-count: 3;
+    }
+}
+
+/* For small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px){
+    #photo{
+        column-count: 2;
+    }
+}

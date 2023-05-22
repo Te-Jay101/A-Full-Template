@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>La Trattoria da Vincenzo</title>
 </head>
+<!--Nav bar-->
 
 <body>
     <header>
@@ -38,29 +39,31 @@
         </nav>
     </header>
 
+<!--sign up section-->
+
     <section>
-        <div class="container-2"></div>
-        <form class="form-style">
+        <section class="form-section">
+            <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
                 <h2>The place to sign up!</h2>
                 <br>
             <label for="fname">First Name:</label>
             <br>
-            <input id="fname" type="text" name="first_name" required>
+            <input class="text-input" id="fname" type="text" name="first_name" required>
             <br>
             <label for="lname">Last Name:</label>
             <br>
-             <input id="lname" type="text" name="last_name" required>
+             <input class="text-input" id="lname" type="text" name="last_name" required>
             <br>
             <label for="email">Email Address:</label>
             <br>
-            <input id="email" type="email" name="email_address" required>
+            <input class="text-input" id="email" type="email" name="email_address" required>
             <br>
             <label for="text">Mobile:</label>
             <br>
-            <input id="text" type="text" name="mobile" required>
+            <input class="text-input" id="text" type="text" name="mobile" required>
             <br>
             <br>
-            <p>Prefered method of contact:</p>
+            <h3>Prefered method of contact:</h3>
             <label for="mobile">Mobile</label>
             <input id="mobile" type="radio" name="contact_preference" value="mobile" required>
             <br>
@@ -68,24 +71,15 @@
             <input id="email" type="radio" name="contact_preference" value="email" required>
             <br>
             <label for="both">Both</label>
-            <input id="both" type="radio" name="contact_preference" value="both">
+            <input id="both" type="radio" name="contact_preference" value="both" required>
             <br>
             <br>
-            <input type="submit" value="Sign Up!" class="form-submit-button">
+            <input class="Submit-Button" type="submit" value="Sign Up!">
             <br>
-        </form>
-     </div>      
+        </form>    
     </section>
 
-
-
 <!--content!!!!!-->
-
-
-
-
-
-    
 
     <footer class="footer">
        <div class="col-1">
