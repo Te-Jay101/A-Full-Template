@@ -65,8 +65,9 @@ h1, h2 {
 #hero-outer {
     height: 100%;
     width: 100%;
-    overflow: visible;
+    overflow: auto;
     max-width: 100%;
+    padding-top: 5%;
 
     position: relative;
 }
@@ -93,14 +94,11 @@ h4 {
     text-align: center;
 }
 
-/* so far so good on matching css and html */
-
 /* Menu styling */
 
 .container {
     margin-top: 30%;
     width: 100%;
-    padding: 100pxx 15%;
     background: #efefef;
     display: flex;
     color: #008000;
@@ -253,29 +251,25 @@ ul {
         margin-top: 0;
     }
 
-    #cover-text {
+    #cover-text, #logo {
         width:100%;
         float:left;
         padding: 0;
     }
 
 
-    #times div {
+    #menu div {
         width: 100%;
         clear: both;
         height: 150px;
         padding: 0;
-    }
-
-    hr {
-        display: none;
     }
 }
 
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
 
-    #menu{
+    #menu {
         clear: left;
         float: left;
         margin-left: 30px; 
@@ -293,18 +287,9 @@ ul {
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading{
-        width: inherit;
-    }
-
     .text {
         width: 100%;
         text-align: center;
-    }
-
-    .text p, {
-        text-align: center;
-        padding: 0 20px 0 20px;
     }
 
     #photo{
