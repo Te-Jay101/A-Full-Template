@@ -78,21 +78,26 @@ h1, h2 {
 }
 
 .container-1 {
-    display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
   }
 
-  .text {
+.mainpic {
+    text-align: center;
+}
+
+.text {
     font-size: 20px;
     padding-left: 20px;
     color: #008000;
+    text-align: center;
   }
 
 h4 {
     text-decoration: underline;
     text-align: center;
 }
+
 
 /* Menu styling */
 
@@ -302,4 +307,5 @@ ul {
     #photo{
         column-count: 2;
     }
+
 }
